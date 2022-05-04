@@ -1,5 +1,5 @@
 # Importing all the necessary modules
-from tkinter import *
+from Tkinter import *
 
 # Initializing the python to do list GUI window
 root = Tk()
