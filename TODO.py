@@ -33,7 +33,7 @@ delete_btn.place(x=150, y=350)
 root.update()
 root.mainloop()
 # Adding and Deleting items functions
-
+'''
 def add_item(entry: Entry, listbox: Listbox):
     new_task = entry.get()
     listbox.insert(END, new_task)
@@ -50,3 +50,4 @@ def delete_item(listbox: Listbox):
                 lines.remove(line)
             tasks_list_file.write(line)
         tasks_list_file.close()
+        '''
