@@ -23,6 +23,7 @@ with open('tasks.txt', 'r+') as tasks_list:
 # Creating the Entry widget where the user can enter a new item
 new_item_entry = Entry(root, width=37)
 new_item_entry.place(x=35, y=310)
+'''
 def add_item(entry: Entry, listbox: Listbox):
     new_task = entry.get()
     listbox.insert(END, new_task)
@@ -38,7 +39,7 @@ def delete_item(listbox: Listbox):
             if listbox.get(ACTIVE) == line[:-2]:
                 lines.remove(line)
             tasks_list_file.write(line)
-        tasks_list_file.close()
+        tasks_list_file.close()'''
 # Creating the Buttons
 add_btn = Button(root, text='Add Item', bg='Azure', width=10, font=('Helvetica', 12),
                  command=lambda: add_item(new_item_entry, tasks))
